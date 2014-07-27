@@ -1,0 +1,49 @@
+Getting & Cleaning Data
+Course Project
+
+Code Book
+
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals. Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm . Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing to indicate frequency domain signals. 
+
+These signals were used to estimate variables of the feature vector to denote 3-axial signals in the X, Y and Z directions.
+
+
+Qualatative Data:
+
+subject - identification number of volenteer
+          Levels: 1 to 30
+          
+  
+Activity - task performed by volenteer
+
+          Levels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+
+Partition - The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly             partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30%             the test data.
+
+          Levels: Train, Test
+          
+Quanititative Data:  (x, y, z coordinates) / mean(): Mean value and std(): Standard deviation of the following:
+
+          mesurement (original source variable)
+
+            - TimeBodylinearAccel (tBodyAccJerk)
+            - TimeBodyAccelMagnitude (tBodyAccMag)
+            - TimeBodyAccel (tBodyAcc)
+            - TimeGravityAccel (tGravityAcc)
+            - TimeBodyAngularVeclocity (tBodyGyroJerk)
+            - TimeGravityAccelMagnitude (tGravityAccMag)
+            - TimeBodylinearAccelMagnitude (tBodyAccJerkMag)
+            - TimeBodyGyroMagnitude (tBodyGyroJerkMag)
+            - TimeBodyAngularVeclocityMagnitude (tBodyGyroJerk)
+            - reqBodyAngularVeclocityMagnitude (fBodyGyroJerkMag)
+            - FreqBodylinearAccelMagnitude  (fBodyBodyAccJerkMag)
+            - FreqBodyAccelMagnitude (fBodyAccMag)
+            - FreqBodylinearAccel (fBodyBodyAccJerk)
+            - FreqBodyGyroMagnitude (fBodyGyroMag)
+            - FreqBodyAccel (fBodyAcc)
+            - FreqBodyGyro (fBodyGyro)
+
